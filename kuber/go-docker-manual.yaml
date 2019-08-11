@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-docker-manual
+spec:
+  containers:
+    - image: vchilikov/go-docker
+      name: go-docker
+      ports:
+        - containerPort: 9000
+          protocol: TCP

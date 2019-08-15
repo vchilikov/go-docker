@@ -5,6 +5,7 @@ metadata:
   labels:
     creation_method: manual
     env: prod
+    app: go-docker
 spec:
   containers:
     - image: vchilikov/go-docker

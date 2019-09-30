@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: go-docker
+spec:
+  rules:
+    - host: go-docker.example.com
+      http:
+        paths:
+          - backend:
+              serviceName: go-docker-nodeport
+              servicePort: 80

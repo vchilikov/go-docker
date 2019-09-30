@@ -13,6 +13,7 @@ spec:
     spec:
       containers:
         - name: go-docker
-          image: vchilikov/go-docker
+          image: vchilikov/go-docker:latest
+          imagePullPolicy: Always
           ports:
           - containerPort: 9000
